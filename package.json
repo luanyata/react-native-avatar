@@ -1,15 +1,19 @@
 {
-  "name": "react-native-avatar",
-  "version": "0.1.0",
+  "name": "@luanyata/react-native-avatar",
+  "version": "1.0.0",
   "description": "Avatar from react native",
-  "main": "lib/commonjs/index",
-  "module": "lib/module/index",
+  "private": false,
+  "main": "lib/commonjs/index.js",
+  "module": "lib/module/index.js",
   "types": "lib/typescript/src/index.d.ts",
-  "react-native": "src/index",
-  "source": "src/index",
+  "react-native": "src/index.tsx",
+  "source": "src/index.tsx",
   "files": [
     "src",
     "lib",
+    "!**/__tests__",
+    "!**/__fixtures__",
+    "!**/__mocks__",
     "android",
     "ios",
     "cpp",
@@ -21,9 +25,6 @@
     "!android/gradlew",
     "!android/gradlew.bat",
     "!android/local.properties",
-    "!**/__tests__",
-    "!**/__fixtures__",
-    "!**/__mocks__",
     "!**/.*"
   ],
   "scripts": {
@@ -68,7 +69,7 @@
     "prettier": "^2.0.5",
     "react": "18.2.0",
     "react-native": "0.72.4",
-    "react-native-builder-bob": "^0.20.0",
+    "react-native-builder-bob": "^0.22.0",
     "release-it": "^15.0.0",
     "typescript": "^5.0.2"
   },
@@ -82,7 +83,6 @@
   "engines": {
     "node": ">= 18.0.0"
   },
-  "packageManager": "^yarn@1.22.15",
   "jest": {
     "preset": "react-native",
     "modulePathIgnorePatterns": [
@@ -148,12 +148,7 @@
     "targets": [
       "commonjs",
       "module",
-      [
-        "typescript",
-        {
-          "project": "tsconfig.build.json"
-        }
-      ]
+      "typescript"
     ]
   }
 }

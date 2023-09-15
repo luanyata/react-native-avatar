@@ -1,18 +1,41 @@
 import * as React from 'react';
 
-import { StyleSheet, View, Text } from 'react-native';
-import { multiply } from 'react-native-avatar';
+import { StyleSheet, View } from 'react-native';
+import { Avatar } from 'react-native-avatar';
 
 export default function App() {
-  const [result, setResult] = React.useState<number | undefined>();
-
-  React.useEffect(() => {
-    multiply(3, 7).then(setResult);
-  }, []);
-
   return (
     <View style={styles.container}>
-      <Text>Result: {result}</Text>
+      <Avatar userName="Luan Lima" active rounded />
+      <Avatar
+        userName="Luan "
+        size={100}
+        backgroundColor={'#ff0000'}
+        backgroundColors={['#ff0000', '#00ff00', '#0000ff']}
+        active
+      />
+      <Avatar userName="Luan Lima" size={100} rounded />
+      <Avatar
+        userName="Luan Lima"
+        size={100}
+        rounded
+        src="https://avatars.githubusercontent.com/u/17828287?v=4"
+      />
+      <Avatar
+        userName="Luan Lima"
+        size={100}
+        rounded
+        src="https://github.com/luanyata.png"
+        active
+      />
+      <Avatar
+        userName="Luan Lima"
+        size={100}
+        rounded
+        src="https://avatars.githubusercontent.com/u/17828287?v=4"
+        active
+        activeCircleColor="red"
+      />
     </View>
   );
 }
@@ -20,8 +43,11 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
+    flexDirection: 'row',
+    flexWrap: 'wrap',
+    marginTop: 100,
+    gap: 20,
     alignItems: 'center',
-    justifyContent: 'center',
   },
   box: {
     width: 60,
