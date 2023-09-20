@@ -5,8 +5,8 @@
 <h1 align="center">Avatar React Native</h1>
 
 <p align="center">
-  <a href="https://www.npmjs.com/package/@luanyata/react-native-avatar"><img alt="npm" src="https://img.shields.io/npm/v/react-native-avatar.svg"></a>
-  <a href="https://www.npmjs.com/package/@luanyata/react-native-avatar"><img alt="npm" src="https://img.shields.io/npm/dm/react-native-avatar.svg"></a>
+  <a href="https://www.npmjs.com/package/@luanyata/react-native-avatar"><img alt="npm" src="https://img.shields.io/npm/v/@luanyata/react-native-avatar.svg"></a>
+  <a href="https://www.npmjs.com/package/@luanyata/react-native-avatar"><img alt="npm" src="https://img.shields.io/npm/dm/@luanyata/react-native-avatar.svg"></a>
   <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/luanyata/react-native-avatar?color=%2304D361">
    <a href="https://www.linkedin.com/in/luanyata/">
     <img alt="Made by Luan Lima" src="https://img.shields.io/badge/made%20by-Luan%20Lima-%2304D361">

@@ -1,6 +1,6 @@
 {
   "name": "@luanyata/react-native-avatar",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Avatar from react native",
   "private": false,
   "main": "lib/commonjs/index.js",
@@ -81,7 +81,7 @@
     "react-native": "*"
   },
   "engines": {
-    "node": ">= 18.0.0"
+    "node": ">= 14.0.0"
   },
   "jest": {
     "preset": "react-native",
